@@ -20,7 +20,7 @@ public class Home implements ActionListener
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		f.setSize(400,400);
+		f.setSize(400,410);
 		f.setResizable(false);
 		f.pack();
 		f.setVisible(true);
