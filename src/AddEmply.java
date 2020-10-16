@@ -25,7 +25,7 @@ public class AddEmply implements ActionListener
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		f3.setSize(400,400);
+		f3.setSize(410,410);
 		f3.setResizable(false);
 		f3.pack();
 		f3.setVisible(true);
@@ -140,7 +140,7 @@ public class AddEmply implements ActionListener
 		}else {
 			check=true;
 		}
-		if(id.length()<5) {
+		if(id.length()<(6-1)) {
 			check=false;
 			JOptionPane.showMessageDialog(f3,"Fill all the fields");
 			return check;

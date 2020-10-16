@@ -58,7 +58,7 @@ public class Status implements ActionListener
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		cancel.setBounds(475,250,155,50);
+		cancel.setBounds(476,251,156,51);
 		cancel.setForeground(Color.decode("#0F5DA6"));
 		
 		

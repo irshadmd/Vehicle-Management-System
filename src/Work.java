@@ -64,13 +64,8 @@ public class Work implements ActionListener
 		f9.add(add);
 		f9.add(cancel);
 		
-		add.addActionListener(this);
-		cancel.addActionListener(this);
-	}
-	
-	@Override
-	public void actionPerformed(ActionEvent e) 
-	{
+		add.addActionListener(new ActionListener(){
+   public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==add)
 		{
 			idtext=idt.getText().toString();
@@ -95,6 +90,16 @@ public class Work implements ActionListener
 			f9.dispose();
 			new Home();
 		}
+	}
+
+});
+		cancel.addActionListener(this);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) 
+	{
+		
 		if(e.getSource()==cancel)
 		{
 			f9.dispose();
